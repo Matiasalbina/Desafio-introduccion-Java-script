@@ -22,6 +22,20 @@ function aumentarUnidades() {
   console.log(cantidadValue, valorTotal);
 }
 /*----------------------------------------------------------------------------- */
+function disminuirUnidades() {
+  const precioTotalElement = document.querySelector(".valor-total")
+    const cantidadElement = document.querySelector(".cantidad")
+    const cantidadValue = Number(document.querySelector(".cantidad").innerHTML)
+    
+    if (cantidadValue > 0) {
+        
+        const nuevaCantidad = cantidadValue - 1
+        cantidadElement.innerHTML = nuevaCantidad;
 
+        const valorTotal = calcularPrecioTotal(nuevaCantidad, precio);
+        precioTotalElement.innerHTML = valorTotal;
+        
+    }
+}
 
 /*Agregar funcion disminuir*/
