@@ -1,6 +1,6 @@
 /* variable constante*/
-const precio = 400000
-const cantidadElement = document.querySelector('.cantidad')
+const precio = 400000;
+const cantidadElement = document.querySelector('.cantidad');
 /*-----------------------------------------------------------------*/
 function calcularPrecioTotal(cantidad, precio) {
   const amount = Number(cantidad);
@@ -22,3 +22,6 @@ function aumentarUnidades() {
   console.log(cantidadValue, valorTotal);
 }
 /*----------------------------------------------------------------------------- */
+
+
+/*Agregar funcion disminuir*/
